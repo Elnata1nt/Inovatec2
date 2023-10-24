@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+   --link2-color: #B80E65;
+   --text1: #999;
+   --line-input: #d9d9d9;
+}
+/* geral */
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: #323232;
+    border: none;
+}
+ /*configuraçao da pagina*/
+body {
+    background: linear-gradient(45deg,#2d9de2, #B80E65);
+    background-size: 100% 100%;
+    animation: animacao 30000ms infinite;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items:center;
+ }
+
+input, label {
+    display: block;
+    width: 100%;
+}
+
+input:focus, label:focus {
+    outline: none;
+}
+
+a {
+    color: #b80e65;
+}
+
+
+/* formulário */
+#main-container {
+    background: white;
+    padding: 2rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    width: 45%;
+    height: 20%;
+    padding: 2rem; 
+    border: 1px solid #DADADA;
+    margin-left: 5%;
+ 
+}
+
+#main-container h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.6rem; /* fonte adaptada ao elemento root */
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.full-box {
+    flex: 1 1 100%;
+    position: relative;    
+}
+
+.half-box {
+    flex: 1 1 45%;
+    position: relative;
+}
+
+.spacing {
+    margin-right: 2.5%;
+}
+
+label {
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+input {
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+    font-size: .9rem;
+    margin-bottom: 40px;
+}
+
+input:focus {
+    border-color: #B80E65;
+}
+
+input[type='submit'] {
+    background-color: #B80E65;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    cursor: pointer;
+}
+/* body{
+background:  linear-gradient(45deg,#2d9de2,#b80e65);
+animation: animacao 30000ms infinite;
+background-repeat: no-repeat;
+min-height: 100vh;
+min-width: 100vw;
+display: flex;
+align-items: center;
+
+} */
+#agreement {
+    margin-right: 5px;
+
+}
+
+#agreement, #agreement-label {
+    display: inline-block;
+    width: auto;
+}
+
+/* validações */
+.error-validation {
+    color: #FF1A1A;
+    position: absolute;
+    top: 57px;
+    font-size: .8rem;
+}
+
+.template {
+    display: none;
+}
+
+.fun-cadastro {
+
+    height: 20%;
+    width: 40%;
+    margin-left: 8%;
+    margin-top: -5%;
+ }
